@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7HillsHolidays - Explore the World</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/travel-agency/css/style.css">
+    <link rel="stylesheet" href="/travel-agency/css/home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 252, 239, 0.95); backdrop-filter: blur(8px);">
+        <div class="container">
+            <!-- Brand Logo with spacing -->
+            <a class="navbar-brand fw-bold me-5" href="#" style="color: #5c899d;">
+                <i class="fas fa-plane me-2"></i>7HillsHolidays
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation Links with spacing -->
+                <ul class="navbar-nav me-auto" style="gap: 1.5rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 py-2" href="#" style="color: #5c899d;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="#" style="color: #5c899d;">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="#" style="color: #5c899d;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="#" style="color: #5c899d;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="#" style="color: #5c899d;">FAQ</a>
+                    </li>
+                </ul>
+                
+                <!-- Contact Button with spacing -->
+                <div class="ms-lg-4">
+                    <button class="btn px-4 py-2" style="background-color: #5c899d; color: white;">
+                        <i class="fas fa-phone-alt me-2"></i>Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-color: #5c899d;">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="hero-content text-white">
+                <h1 class="display-4 fw-bold">Discover Your Dream Destination</h1>
+                <p class="lead">Explore the best travel packages with exclusive deals.</p>
+                <button class="btn btn-light btn-lg me-2">Explore Tours</button>
+                <button class="btn btn-outline-light btn-lg">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Carousel -->
+    <section class="top-destinations py-5" style="background-color: #fffcef;">
+                                <div class="container">
+                                    <h2 class="text-center mb-5 fw-bold" style="color: #5c899d;">Popular Destinations</h2>
+                                    
+                                    <!-- Bootstrap Carousel -->
+                                    <div id="destinationsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <!-- Slide 1 (Active) -->
+                                            <div class="carousel-item active">
+                                                <div class="row g-4 justify-content-center">
+                                                    <!-- Card 1 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images/Dubai.jpg" alt="Dubai" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Dubai</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">15% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> UAE</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹25,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹30,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.8</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Card 2 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images/Bali.jpg" alt="Bali" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Bali</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">10% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> Indonesia</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹32,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹36,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.9</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Card 3 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images/switzerland.jpg" alt="Switzerland" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Switzerland</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">20% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> Europe</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹89,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹1,12,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.7</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Slide 2 -->
+                                            <div class="carousel-item">
+                                                <div class="row g-4 justify-content-center">
+                                                    <!-- Card 4 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images//paris.jpg" alt="Paris" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Paris</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">12% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> France</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹45,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹52,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.6</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Card 5 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images/Japan.jpg" alt="Tokyo" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Tokyo</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">8% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> Japan</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹38,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹42,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.5</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Card 6 -->
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="destination-card shadow-sm rounded-3 overflow-hidden bg-white h-100">
+                                                            <img src="/travel-agency/images/Maldives.jpg" alt="Maldives" class="img-fluid w-100">
+                                                            <div class="p-4">
+                                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                                    <h3 class="mb-0">Maldives</h3>
+                                                                    <span class="badge rounded-pill" style="background-color: #5c899d;">25% OFF</span>
+                                                                </div>
+                                                                <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> Indian Ocean</p>
+                                                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                                                    <div>
+                                                                        <span class="fw-bold" style="color: #5c899d;">₹65,999</span>
+                                                                        <span class="text-muted text-decoration-line-through ms-2">₹88,999</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <i class="fas fa-star text-warning"></i>
+                                                                        <span class="ms-1">4.9</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Carousel Controls -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-teal rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-teal rounded-circle p-2" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+    </section>
+
+    <!-- ======= Travel Styles Section ======= -->
+    <section class="travel-styles py-5" style="background-color: #fff;">
+                                <div class="container">
+                                    <h2 class="text-center mb-5 fw-bold" style="color: #5c899d;">Choose Your Travel Style</h2>
+                                    <div class="row g-4 justify-content-center">
+                                        <!-- Style 1: Honeymoon -->
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="style-card text-center p-4 rounded-3 h-100">
+                                                <div class="icon-wrapper mb-3 mx-auto" style="background-color: #f0f8ff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-heart" style="font-size: 2rem; color: #5c899d;"></i>
+                                                </div>
+                                                <h4>Honeymoon</h4>
+                                                <p class="text-muted">Romantic getaways tailored for couples</p>
+                                                <a href="#" class="btn btn-sm mt-2" style="background-color: #5c899d; color: white;">Explore</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Style 2: Family -->
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="style-card text-center p-4 rounded-3 h-100">
+                                                <div class="icon-wrapper mb-3 mx-auto" style="background-color: #f0f8ff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-users" style="font-size: 2rem; color: #5c899d;"></i>
+                                                </div>
+                                                <h4>Family</h4>
+                                                <p class="text-muted">Fun-filled trips for all ages</p>
+                                                <a href="#" class="btn btn-sm mt-2" style="background-color: #5c899d; color: white;">Explore</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Style 3: Adventure -->
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="style-card text-center p-4 rounded-3 h-100">
+                                                <div class="icon-wrapper mb-3 mx-auto" style="background-color: #f0f8ff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-hiking" style="font-size: 2rem; color: #5c899d;"></i>
+                                                </div>
+                                                <h4>Adventure</h4>
+                                                <p class="text-muted">Thrilling experiences for adrenaline junkies</p>
+                                                <a href="#" class="btn btn-sm mt-2" style="background-color: #5c899d; color: white;">Explore</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Style 4: Luxury -->
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="style-card text-center p-4 rounded-3 h-100">
+                                                <div class="icon-wrapper mb-3 mx-auto" style="background-color: #f0f8ff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-crown" style="font-size: 2rem; color: #5c899d;"></i>
+                                                </div>
+                                                <h4>Luxury</h4>
+                                                <p class="text-muted">Premium stays and exclusive experiences</p>
+                                                <a href="#" class="btn btn-sm mt-2" style="background-color: #5c899d; color: white;">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </section>
+
+   <!-- ======= Exploring Destinations ======= -->
+    <section class="exploring-destinations py-5" style="background-color: #fffcef;">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="color: #5c899d;">Exploring Destinations</h2>
+            
+            <div class="destination-grid">
+                <!-- Row 1 -->
+                <div class="destination-card" data-category="europe">
+                    <img src="/travel-agency/images/swissAlps.jpg" alt="Swiss Alps" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Swiss Alps</h3>
+                        <p class="mb-2">Snow-capped peaks & alpine lakes</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹89,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="asia">
+                    <img src="/travel-agency/images/baliBeaches.jpg" alt="Bali Beach" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Bali Beaches</h3>
+                        <p class="mb-2">White sands & sunset views</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹32,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="europe">
+                    <img src="/travel-agency/images/paris2.jpg" alt="Paris" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Paris</h3>
+                        <p class="mb-2">City of love & lights</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹45,999</button>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="destination-card" data-category="desert">
+                    <img src="/travel-agency/images/dubaiDeserts.jpg" alt="Dubai Desert" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Dubai Desert</h3>
+                        <p class="mb-2">Golden sands & luxury camps</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹25,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="asia">
+                    <img src="/travel-agency/images/tokyoNights.jpg" alt="Tokyo Night" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Tokyo Nights</h3>
+                        <p class="mb-2">Neon lights & bustling streets</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹38,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="tropical">
+                    <img src="/travel-agency/images/Maldives2.jpg" alt="Maldives" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Maldives</h3>
+                        <p class="mb-2">Overwater bungalows & coral reefs</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹65,999</button>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="destination-card" data-category="europe">
+                    <img src="/travel-agency/images/santorini.jpg" alt="Santorini" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Santorini</h3>
+                        <p class="mb-2">Whitewashed houses & blue domes</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹52,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="mountain">
+                    <img src="/travel-agency/images/everest.jpg" alt="Everest" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Everest Base</h3>
+                        <p class="mb-2">Himalayan trekking adventures</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹42,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="urban">
+                    <img src="/travel-agency/images/newYork.jpg" alt="New York" class="img-fluid">
+                    <div class="overlay">
+                        <h3>New York</h3>
+                        <p class="mb-2">Iconic skyline & Broadway</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹58,999</button>
+                    </div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="destination-card" data-category="tropical">
+                    <img src="/travel-agency/images/Phuket.jpg" alt="Phuket" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Phuket</h3>
+                        <p class="mb-2">Turquoise waters & limestone cliffs</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹28,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="desert">
+                    <img src="/travel-agency/images/pyramid.jpg" alt="Pyramids" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Egypt</h3>
+                        <p class="mb-2">Ancient wonders & Nile cruises</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹35,999</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="mountain">
+                    <img src="/travel-agency/images/canadianRockies.jpg" alt="Canadian Rockies" class="img-fluid">
+                    <div class="overlay">
+                        <h3>Canadian Rockies</h3>
+                        <p class="mb-2">Glacial lakes & wildlife</p>
+                        <button class="btn btn-sm" style="background-color: #5c899d; color: white;">From ₹75,999</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn px-4 py-2" style="background-color: #5c899d; color: white;" id="loadMore">
+                    <i class="fas fa-sync-alt me-2"></i>Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Press Section ======= -->
+    <section class="press-section py-5" style="background-color: #fffcef;">
+                                    <div class="container">
+                                        <h2 class="text-center mb-5 fw-bold" style="color: #5c899d;">What The Press Says</h2>
+                                        <div class="row justify-content-center">
+                                            <!-- Press Card 1 -->
+                                            <div class="col-lg-4 col-md-6 mb-4">
+                                                <div class="press-card bg-white p-4 rounded-3 h-100">
+                                                    <div class="press-logo mb-3">
+                                                        <img src="/travel-agency/images/forbeslogo.png" alt="Forbes Logo" class="img-fluid" style="max-height: 60px;">
+                                                    </div>
+                                                    <p class="press-quote mb-4">
+                                                        "TravelEase offers unparalleled curated experiences for modern travelers. Their attention to detail is exceptional."
+                                                    </p>
+                                                    <div class="press-author d-flex align-items-center">
+                                                        <img src="/travel-agency/images/forbesAuthor.jpg" alt="Author" class="rounded-circle me-3" width="40">
+                                                        <div>
+                                                            <h6 class="mb-0" style="color: #5c899d;">Sarah Johnson</h6>
+                                                            <small class="text-muted">Travel Editor, Forbes</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Press Card 2 -->
+                                            <div class="col-lg-4 col-md-6 mb-4">
+                                                <div class="press-card bg-white p-4 rounded-3 h-100">
+                                                    <div class="press-logo mb-3">
+                                                        <img src="/travel-agency/images/nationalGeographyLogo.png" alt="NatGeo Logo" class="img-fluid" style="max-height: 60px;">
+                                                    </div>
+                                                    <p class="press-quote mb-4">
+                                                        "A game-changer in sustainable tourism. TravelEase makes eco-friendly travel accessible without compromising luxury."
+                                                    </p>
+                                                    <div class="press-author d-flex align-items-center">
+                                                        <img src="/travel-agency/images/nationalGeographyAuthor.jpg" alt="Author" class="rounded-circle me-3" width="40">
+                                                        <div>
+                                                            <h6 class="mb-0" style="color: #5c899d;">Michael Chen</h6>
+                                                            <small class="text-muted">Contributor, National Geographic</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Press Card 3 -->
+                                            <div class="col-lg-4 col-md-6 mb-4">
+                                                <div class="press-card bg-white p-4 rounded-3 h-100">
+                                                    <div class="press-logo mb-3">
+                                                        <img src="/travel-agency/images/travelMazineLogo.png" alt="Travel Magazine Logo" class="img-fluid" style="max-height: 60px;">
+                                                    </div>
+                                                    <p class="press-quote mb-4">
+                                                        "Their AI-powered itinerary builder saved me 10 hours of planning. The future of travel is here!"
+                                                    </p>
+                                                    <div class="press-author d-flex align-items-center">
+                                                        <img src="/travel-agency/images/travelmazineauthor.jpg" alt="Author" class="rounded-circle me-3" width="40">
+                                                        <div>
+                                                            <h6 class="mb-0" style="color: #5c899d;">Priya Sharma</h6>
+                                                            <small class="text-muted">Senior Writer, Travel Magazine</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    </section>
+
+    <!-- ======= Dream Holiday Section ======= -->
+    <section class="dream-holiday py-5" style="background-color: #5c899d; color: white;">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <!-- Left Column (Text) -->
+                                    <div class="col-lg-6 mb-4 mb-lg-0">
+                                        <h2 class="display-5 fw-bold mb-4">Your Dream Holiday Waits</h2>
+                                        <p class="lead mb-4">Let our travel experts craft a personalized itinerary for your perfect getaway. Whether it's a romantic escape, family adventure, or solo exploration, we'll make it unforgettable.</p>
+                                        
+                                        <div class="feature-list">
+                                            <div class="d-flex mb-3">
+                                                <div class="me-3">
+                                                    <i class="fas fa-check-circle" style="color: #fffcef; font-size: 1.5rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-1">100% Tailored Experiences</h5>
+                                                    <p class="mb-0">Custom-built itineraries matching your interests and pace</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex mb-3">
+                                                <div class="me-3">
+                                                    <i class="fas fa-check-circle" style="color: #fffcef; font-size: 1.5rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-1">Local Insider Access</h5>
+                                                    <p class="mb-0">Hidden gems and exclusive experiences you won't find online</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="d-flex">
+                                                <div class="me-3">
+                                                    <i class="fas fa-check-circle" style="color: #fffcef; font-size: 1.5rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <h5 class="mb-1">Stress-Free Planning</h5>
+                                                    <p class="mb-0">From visas to dinner reservations - we handle it all</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button class="btn btn-light btn-lg mt-4" style="background-color: #fffcef; color: #5c899d;">Start Planning Now</button>
+                                    </div>
+                                    
+                                    <!-- Right Column (Image) -->
+                                    <div class="col-lg-6">
+                                        <div class="image-frame rounded-3 overflow-hidden shadow-lg">
+                                            <img src="/travel-agency/images/travelHoliday.jpg" alt="Dream Holiday" class="img-fluid w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    </section>
+
+    <!-- =======  Testimonials Carousel ======= -->
+    <section class="testimonials py-5" style="background-color: #fff;">
+                                        <div class="container">
+                                            <h2 class="text-center mb-5 fw-bold" style="color: #5c899d;">What Our Travelers Say</h2>
+                                            
+                                            <!-- Bootstrap Carousel -->
+                                            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <!-- Testimonial 1 (Active) -->
+                                                    <div class="carousel-item active">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-8">
+                                                                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm mx-auto">
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <img src="/travel-agency/images/rahulVarmaDp.jpg" alt="Rahul Verma" class="rounded-circle me-3" width="60">
+                                                                        <div>
+                                                                            <h5 class="mb-0" style="color: #5c899d;">Rahul Verma</h5>
+                                                                            <div class="rating">
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="quote-wrapper position-relative">
+                                                                        <div class="quote-icon-start" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-left" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                        <p class="mb-0 ps-5 pe-4" style="font-style: italic; color: #1b292e; position: relative; z-index: 1;">
+                                                                            "TravelEase planned our 10-day Switzerland trip flawlessly! From the moment we landed in Zurich, every detail was handled – private transfers, guided tours of Jungfraujoch, and even restaurant reservations with Alpine views. Their app’s real-time updates saved us when our train was delayed. The boutique hotels they selected had character without sacrificing comfort. We’ll never plan a trip ourselves again!"
+                                                                        </p>
+                                                                        <div class="quote-icon-end text-end" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-right" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Testimonial 2 -->
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-8">
+                                                                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm mx-auto">
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <img src="/travel-agency/images/priyaPatelDp.jpg" alt="Priya Patel" class="rounded-circle me-3" width="60">
+                                                                        <div>
+                                                                            <h5 class="mb-0" style="color: #5c899d;">Priya Patel</h5>
+                                                                            <div class="rating">
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star-half-alt text-warning"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="quote-wrapper position-relative">
+                                                                        <div class="quote-icon-start" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-left" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                        <p class="mb-0 ps-5 pe-4" style="font-style: italic; color: #1b292e; position: relative; z-index: 1;">
+                                                                            "Our Bali honeymoon package was worth every rupee! TravelEase surprised us with a private candlelight dinner on Seminyak Beach and upgraded our villa to an infinity pool suite. Their local guide Ketut showed us hidden waterfalls we’d never find online. When my husband got food poisoning, their 24/7 support arranged a doctor within 30 minutes. This level of service is unheard of at their price point!"
+                                                                        </p>
+                                                                        <div class="quote-icon-end text-end" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-right" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Testimonial 3 -->
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-8">
+                                                                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm mx-auto">
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <img src="/travel-agency/images/arjunNairDp.jpg" alt="Arjun Nair" class="rounded-circle me-3" width="60">
+                                                                        <div>
+                                                                            <h5 class="mb-0" style="color: #5c899d;">Arjun Nair</h5>
+                                                                            <div class="rating">
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="quote-wrapper position-relative">
+                                                                        <div class="quote-icon-start" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-left" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                        <p class="mb-0 ps-5 pe-4" style="font-style: italic; color: #1b292e; position: relative; z-index: 1;">
+                                                                            I’ve used many travel agencies, but TravelEase’s Japan itinerary blew me away. They secured impossible reservations – a tea ceremony with a Kyoto geisha and front-row seats to a sumo tournament. Their pocket Wi-Fi kept us connected everywhere, and the rail pass setup was seamless. When typhoon Hagibis hit, their team rerouted our entire trip overnight with zero additional costs. This is next-level travel planning!"
+                                                                        </p>
+                                                                        <div class="quote-icon-end text-end" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-right" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Testimonial 4 (New) -->
+                                                    <div class="carousel-item">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-lg-8">
+                                                                <div class="testimonial-card bg-white p-4 rounded-3 shadow-sm mx-auto">
+                                                                    <div class="d-flex align-items-center mb-3">
+                                                                        <img src="/travel-agency/images/nehaKapoorDp.jpg" alt="Neha Kapoor" class="rounded-circle me-3" width="60">
+                                                                        <div>
+                                                                            <h5 class="mb-0" style="color: #5c899d;">Neha Kapoor</h5>
+                                                                            <div class="rating">
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                                <i class="fas fa-star text-warning"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="quote-wrapper position-relative">
+                                                                        <div class="quote-icon-start" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-left" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                        <p class="mb-0 ps-5 pe-4" style="font-style: italic; color: #1b292e; position: relative; z-index: 1;">
+                                                                            "The 7-day Greek Islands tour was magical! TravelEase chartered a private yacht for our group when the ferry schedule changed unexpectedly. Their restaurant recommendations in Santorini had the best sunset views without the tourist crowds. The boutique hotel in Mykonos had a secret rooftop jacuzzi not listed online. Every transfer arrived 10 minutes early – I’ve never experienced such precision in vacation planning!"
+                                                                        </p>
+                                                                        <div class="quote-icon-end text-end" style="color: #1b292e; opacity: 0.5;">
+                                                                            <i class="fas fa-quote-right" style="font-size: 3rem;"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Carousel Controls -->
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-teal rounded-circle p-2" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-teal rounded-circle p-2" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5" style="background-color: #5c899d; color: white;">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand Info -->
+                <div class="col-lg-4">
+                    <h4 class="mb-3">
+                        <i class="fas fa-plane me-2"></i>TravelEase
+                    </h4>
+                    <p>Making dream vacations a reality since 2015. We specialize in personalized travel experiences.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Destinations</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Special Offers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Travel Guides</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> +91 9876543210</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> help@travelease.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Travel St, Mumbai</li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Subscribe for exclusive deals!</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="button" style="background-color: #fffcef; color: #5c899d;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4" style="border-color: rgba(255, 255, 255, 0.1);">
+            <div class="text-center pt-3">
+                <p class="mb-0">&copy; 2023 TravelEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Auto-Slide Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = new bootstrap.Carousel('#destinationsCarousel', {
+                interval: 3000, // 3 seconds
+                wrap: true
+            });
+        });
+    </script>
+</body>
+</html>

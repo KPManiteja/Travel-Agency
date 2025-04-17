@@ -1,0 +1,24 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/travel-agency/images/homebg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
