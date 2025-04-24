@@ -1,15 +1,5 @@
-/* style.css */
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-:root {
-    --primary-color: #EAA221;
-    --secondary-color: #EABE53;
-    --light-bg: #fffcef;
-    --dark-text: #1b292e;
-    --light-text: #6c757d;
-    --white: #ffffff;
-}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,17 +8,46 @@ body {
 /* Navbar */
 .navbar {
     padding: 15px 0;
+    transition: all 0.3s;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background-color: rgba(251, 226, 193, 0.98) !important;
+    backdrop-filter: blur(8px);
 }
 
 /* Hero Section */
 .hero-section {
-    background: url('/images/homebg.jpg') no-repeat center center;
+    background: url('/images/homebg.jpg') no-repeat center center,
+                linear-gradient(rgba(255, 255, 255, 0.8), rgba(234, 162, 33, 0.8));
     background-size: cover;
     height: 100vh;
     padding-top: 80px;
 }
 
+.btn-light {
+    background-color: #FBE2C1;
+    color: #000000;
+}
+
+.btn-outline-light {
+    border-color: #FBE2C1;
+    color: #FBE2C1;
+}
+
+.btn-outline-light:hover {
+    background-color: #FBE2C1;
+    color: #000000;
+}
+
 /* Footer */
 footer a {
     text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    color: #FBE2C1 !important;
+    text-decoration: underline;
 }
