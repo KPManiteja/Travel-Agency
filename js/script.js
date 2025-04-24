@@ -69,3 +69,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Team Carousel Configuration
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize team carousel
+    const teamCarousel = new bootstrap.Carousel('#teamCarousel', {
+        interval: 5000, // 5 seconds
+        wrap: true,
+        touch: true
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+});

@@ -1,0 +1,158 @@
+/* blog.css */
+/* Blog Hero Section */
+.blog-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/images/blog-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* Featured Posts */
+.featured-posts {
+    background-color: var(--light-bg);
+}
+
+.featured-post-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.featured-post-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-post-card .card-body {
+    padding: 1.5rem;
+}
+
+.featured-post-card .badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Categories Section */
+.categories-section {
+    background-color: var(--white);
+}
+
+.category-card {
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7), transparent);
+    z-index: 1;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+
+/* Recent Posts */
+.recent-posts {
+    background-color: #f8f9fa;
+}
+
+.post-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-color);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-image {
+    position: relative;
+}
+
+.post-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-image .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.post-body {
+    padding: 1.5rem;
+}
+
+.post-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+}
+
+.post-excerpt {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    color: var(--dark-text);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.newsletter-section .form-control {
+    height: 50px;
+    border: none;
+}
+
+.newsletter-section .btn {
+    height: 50px;
+    padding: 0 1.5rem;
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+    font-weight: 500;
+}

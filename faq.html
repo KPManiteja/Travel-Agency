@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - 7HillsHolidays</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/faq.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 252, 239, 0.95); backdrop-filter: blur(8px);">
+        <div class="container">
+            <!-- Brand Logo with spacing -->
+            <a class="navbar-brand fw-bold me-5" href="#" style="color: #5c899d;">
+                <i class="fas fa-plane me-2"></i>7HillsHolidays
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation Links with spacing -->
+                <ul class="navbar-nav me-auto" style="gap: 1.5rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 py-2" href="/index.html" style="color: #5c899d;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="/tours.html" style="color: #5c899d;">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="/blog.html" style="color: #5c899d;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="/about.html" style="color: #5c899d;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2" href="/faq.html" style="color: #5c899d;">FAQ</a>
+                    </li>
+                </ul>
+                
+                <!-- Contact Button with spacing -->
+                <div class="ms-lg-4">
+                    <button class="btn px-4 py-2" style="background-color: #5c899d; color: white;">
+                        <i class="fas fa-phone-alt me-2"></i>Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="text-muted">Find answers to common questions about our travel services</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Booking Questions -->
+                        <div class="faq-category mb-4">
+                            <h4 class="category-title">Booking Questions</h4>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How do I book a tour?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You can book directly through our website by clicking "Book Now" on any tour page, or contact our travel consultants via phone or email for personalized assistance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We accept all major credit/debit cards, UPI payments, net banking, and bank transfers. For international bookings, we also accept PayPal.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment & Cancellation -->
+                        <div class="faq-category mb-4">
+                            <h4 class="category-title">Payment & Cancellation</h4>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        What is your cancellation policy?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Cancellations made 30+ days before departure receive a 90% refund. 15-29 days: 50% refund. Less than 15 days: no refund but we offer travel credits for future bookings. Some special tours may have different policies.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Do you offer payment plans?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! Most tours can be booked with a 25% deposit, with the balance due 30 days before departure. We also offer EMI options through select banking partners.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Preparation -->
+                        <div class="faq-category mb-4">
+                            <h4 class="category-title">Travel Preparation</h4>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        What documents do I need for international travel?
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You'll need a valid passport (with at least 6 months validity), visas (we'll guide you), travel insurance, vaccination certificates if required, and printed copies of your itinerary and hotel vouchers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                        Can you help with visa processing?
+                                    </button>
+                                </h3>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Absolutely! We provide complete visa assistance including document checklist, application filling, appointment scheduling, and follow-up. Some visas may require personal appearance.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- During Your Trip -->
+                        <div class="faq-category">
+                            <h4 class="category-title">During Your Trip</h4>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                        What if I need help during my trip?
+                                    </button>
+                                </h3>
+                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We provide 24/7 emergency support during your trip. You'll receive local contact numbers and our team will be available to assist with any issues from missed connections to medical emergencies.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                        Can I customize my itinerary during the trip?
+                                    </button>
+                                </h3>
+                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, our local guides can help modify your itinerary based on your preferences and local conditions. Some changes may incur additional costs depending on the arrangements.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Still have questions?</h3>
+            <p class="mb-4">Our travel experts are ready to help you plan your perfect vacation</p>
+            <button class="btn btn-primary px-4 py-2">
+                <i class="fas fa-headset me-2"></i>Contact Our Support Team
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand Info -->
+                <div class="col-lg-4">
+                    <h4 class="mb-3">
+                        <i class="fas fa-plane me-2"></i>7HillsHolidays
+                    </h4>
+                    <p>Making dream vacations a reality since 2015. We specialize in personalized travel experiences.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="/tours.html" class="text-white">Destinations</a></li>
+                        <li class="mb-2"><a href="/blog.html" class="text-white">Blog</a></li>
+                        <li class="mb-2"><a href="/about.html" class="text-white">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Support -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> +91 9876543210</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> help@7hillsholidays.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Travel St, Mumbai</li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Subscribe for exclusive deals!</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center pt-3">
+                <p class="mb-0">&copy; 2023 7HillsHolidays. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

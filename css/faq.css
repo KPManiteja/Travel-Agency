@@ -1,0 +1,59 @@
+/* faq.css */
+/* FAQ Section Styles */
+.faq-section {
+    padding-top: 100px;
+    background-color: var(--light-bg);
+}
+
+.faq-category {
+    border-bottom: 1px solid rgba(234, 162, 33, 0.2);
+    padding-bottom: 1rem;
+}
+
+.category-title {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.accordion-button {
+    background-color: rgba(234, 162, 33, 0.1);
+    color: var(--dark-text);
+    font-weight: 500;
+    border-radius: 6px !important;
+    margin-bottom: 0.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(234, 162, 33, 0.25);
+}
+
+.accordion-body {
+    background-color: rgba(255, 252, 239, 0.5);
+    border-radius: 0 0 6px 6px;
+}
+
+/* Contact CTA */
+.contact-cta {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.contact-cta .btn {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.contact-cta .btn:hover {
+    background-color: transparent;
+    color: var(--light-bg);
+    border: 1px solid var(--light-bg);
+}

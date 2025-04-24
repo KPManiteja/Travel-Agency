@@ -1,3 +1,4 @@
+/* home.css */
 /* Navbar Link Hover Effects */
 .nav-link {
     border-radius: 6px;
@@ -6,13 +7,13 @@
 }
 
 .nav-link:hover {
-    background-color: rgba(92, 137, 157, 0.1);
+    background-color: rgba(234, 162, 33, 0.1);
     transform: translateY(-2px);
 }
 
 /* Contact Button Hover */
 .btn:hover {
-    background-color: #4a7283 !important;
+    background-color: #d18e1d !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,7 +35,7 @@
 }
 
 .nav-link:hover {
-    background-color: rgba(92, 137, 157, 0.1);
+    background-color: rgba(234, 162, 33, 0.1);
 }
 
 /* Carousel Controls */
@@ -46,7 +47,7 @@
 
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
-    background-color: #5c899d; /* Teal */
+    background-color: var(--primary-color);
     border-radius: 50%;
     padding: 1.5rem;
     background-size: 1.5rem;
@@ -81,23 +82,23 @@
 
 /* Travel Styles Section */
 .travel-styles {
-    background-color: #fffcef !important;
+    background-color: var(--light-bg) !important;
 }
 
 .style-card {
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(92, 137, 157, 0.2);
-    background-color: white;
+    border: 1px solid rgba(234, 162, 33, 0.2);
+    background-color: var(--white);
 }
 
 .style-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(92, 137, 157, 0.1) !important;
-    border: 1px solid rgba(92, 137, 157, 0.4);
+    box-shadow: 0 10px 20px rgba(234, 162, 33, 0.1) !important;
+    border: 1px solid rgba(234, 162, 33, 0.4);
 }
 
 .style-card h4 {
-    color: #5c899d;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -112,18 +113,18 @@
 
 /* Press Section */
 .press-section {
-    background-color: #fffcef !important;
+    background-color: var(--light-bg) !important;
 }
 
 .press-card {
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(92, 137, 157, 0.1);
+    border: 1px solid rgba(234, 162, 33, 0.1);
 }
 
 .press-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(92, 137, 157, 0.1) !important;
-    border-color: rgba(92, 137, 157, 0.3);
+    box-shadow: 0 10px 20px rgba(234, 162, 33, 0.1) !important;
+    border-color: rgba(234, 162, 33, 0.3);
 }
 
 .press-quote {
@@ -139,29 +140,28 @@
     left: 0;
     top: -10px;
     font-size: 3rem;
-    color: rgba(92, 137, 157, 0.2);
+    color: rgba(234, 162, 33, 0.2);
     font-family: Georgia, serif;
 }
 
 .press-author img {
-    border: 2px solid rgba(92, 137, 157, 0.3);
+    border: 2px solid rgba(234, 162, 33, 0.3);
 }
-
 
 /* Testimonials Carousel */
 .testimonials {
-    background-color: #fffcef !important;
+    background-color: var(--light-bg) !important;
 }
 
 .testimonial-card {
     transition: all 0.3s;
-    border: 1px solid rgba(92, 137, 157, 0.2);
+    border: 1px solid rgba(234, 162, 33, 0.2);
     max-width: 800px;
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(92, 137, 157, 0.1) !important;
+    box-shadow: 0 10px 20px rgba(234, 162, 33, 0.1) !important;
 }
 
 .carousel-control-prev, 
@@ -171,7 +171,7 @@
 
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
-    background-color: #5c899d;
+    background-color: var(--primary-color);
     border-radius: 50%;
     padding: 1.5rem;
     background-size: 1.5rem;
@@ -181,20 +181,17 @@
     color: #ffc107; /* Gold */
 }
 
-/* Ensure text readability for longer reviews */
 .testimonial-card p {
     line-height: 1.6;
     font-size: 1.05rem;
     color: #555;
 }
 
-/* Limit card width for optimal reading */
 .testimonial-card {
     max-width: 800px;
     padding: 25px !important;
 }
 
-/* Quotation Styling */
 .quote-wrapper {
     padding: 0 1.5rem;
 }
@@ -236,7 +233,7 @@
 }
 
 .dream-holiday .feature-list h5 {
-    color: #fffcef;
+    color: var(--light-bg);
     font-weight: 600;
 }
 
@@ -252,8 +249,8 @@
 
 .dream-holiday .btn:hover {
     background-color: transparent !important;
-    color: #fffcef !important;
-    border-color: #fffcef;
+    color: var(--light-bg) !important;
+    border-color: var(--light-bg);
 }
 
 /* Footer Styling */
@@ -263,7 +260,7 @@
 }
 
 .footer a:hover {
-    color: #fffcef !important;
+    color: var(--light-bg) !important;
     text-decoration: underline;
 }
 
@@ -278,8 +275,8 @@
 }
 
 .social-icons i:hover {
-    background-color: #fffcef;
-    color: #5c899d !important;
+    background-color: var(--light-bg);
+    color: var(--primary-color) !important;
 }
 
 .input-group input {
@@ -288,7 +285,7 @@
 }
 
 .input-group button:hover {
-    background-color: #fffcef;
+    background-color: var(--light-bg);
     opacity: 0.9;
 }
 
@@ -369,10 +366,10 @@
 /* Load More Button */
 #loadMore {
     transition: all 0.3s;
-    border: 2px solid #5c899d;
+    border: 2px solid var(--primary-color);
 }
 
 #loadMore:hover {
     background-color: transparent !important;
-    color: #5c899d !important;
+    color: var(--primary-color) !important;
 }
