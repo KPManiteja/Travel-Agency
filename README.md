@@ -33,3 +33,34 @@ A modern, responsive travel website offering destination packages, travel blogs,
   - Interactive elements with hover effects
 
 ## File Structure
+TRAVEl AGENCY
+├── index.html # Homepage
+├── tours.html # Destinations page
+├── blog.html # Travel blog
+├── about.html # About Us page
+├── faq.html # FAQ page
+├── css/
+│ ├── style.css # Global styles
+│ ├── tours.css # Destinations page styles
+│ ├── blog.css # Blog page styles
+│ ├── about.css # About page styles
+│ └── faq.css # FAQ page styles
+├── js/
+│ └── script.js # Main JavaScript file
+└── images/ # All website images
+
+
+## Installation
+
+No installation required - this is a static website. Simply open any HTML file in a web browser.
+
+## How to Customize
+
+1. **Change Colors**:
+   Modify the CSS variables in each stylesheet:
+   ```css
+   :root {
+       --primary-color: #EAA221;       /* Golden yellow */
+       --secondary-color: #FBE2C1;     /* Light cream */
+       --dark-color: #000000;          /* Black */
+   }
