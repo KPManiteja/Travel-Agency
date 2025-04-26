@@ -194,19 +194,7 @@
     padding-left: 20px;
 }
 
-.press-quote:before {
-    content: """;
-    position: absolute;
-    left: 0;
-    top: -10px;
-    font-size: 3rem;
-    color: rgba(234, 162, 33, 0.2);
-    font-family: Georgia, serif;
-}
 
-.press-author img {
-    border: 2px solid rgba(234, 162, 33, 0.3);
-}
 
 /* Testimonials */
 .testimonials {
