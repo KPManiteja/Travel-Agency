@@ -1,6 +1,6 @@
-# 7HillsHolidays - Travel Website
+# Travel Agency- Travel Website
 
-![7HillsHolidays Logo](https://via.placeholder.com/150x50?text=7HillsHolidays)
+![Travel Agency Logo](https://via.placeholder.com/150x50?text=7HillsHolidays)
 
 A modern, responsive travel website offering destination packages, travel blogs, and booking services.
 
